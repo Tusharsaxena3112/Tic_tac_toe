@@ -66,3 +66,11 @@ def full_board_check(board):
         if board[i] == '':
             return False
     return True
+
+
+def player_posiion():
+    position = 0
+    while position not in range(1, 10) or not space_check():
+        position = int(input('Enter index position :'))
+
+    return position
