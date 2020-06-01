@@ -74,3 +74,11 @@ def player_posiion():
         position = int(input('Enter index position :'))
 
     return position
+
+
+def replay():
+    choice = input('Do you want play again:(y or n)')
+    if choice == 'y':
+        return True
+    else:
+        return False
