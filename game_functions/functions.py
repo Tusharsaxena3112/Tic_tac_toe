@@ -6,6 +6,8 @@
 # Repeat c and d until the game has been won or tied.
 # Ask if players want to play again.
 
+import random
+
 
 def player_marker():
     marker = ' '
@@ -46,3 +48,10 @@ def win_check(board, marker):
         return True
     else:
         return False
+
+
+def who_play_first():
+    r = random.randint(0, 1)
+    if (r == 0):
+        return 'Player 1'
+    return 'Player 2'
