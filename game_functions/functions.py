@@ -52,7 +52,7 @@ def win_check(board, marker):
 
 def who_play_first():
     r = random.randint(0, 1)
-    if (r == 0):
+    if r == 0:
         return 'Player 1'
     return 'Player 2'
 

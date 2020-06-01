@@ -1,4 +1,4 @@
-from game_functions import functions
+from game_functions import functions as f
 
 # # walk through
 # We need to print a board.
@@ -10,6 +10,18 @@ from game_functions import functions
 
 print('WELCOME TO TIC-TOC-TOE')
 while True:
+    board = [' '] * 10
+    player_1, player_2 = f.player_marker()
+    turn = f.who_play_first()
+    ready = input('Ready to play (y or n)')
+    if ready == 'y':
+        game_on = True
+    else:
+        game_on = False
 
-    if not functions.replay():
+    while game_on:
+        if turn == 'Player 1':
+            f.display_board(board)
+
+    if not f.replay():
         break

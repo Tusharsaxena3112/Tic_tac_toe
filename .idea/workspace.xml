@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="622f44f7-3d11-4399-adfc-db4e8e9691d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/game_functions/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_functions/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_functions/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_functions/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_functions/game.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591019017601</updated>
-      <workItem from="1591019018791" duration="6409000" />
+      <workItem from="1591019018791" duration="6893000" />
     </task>
     <task id="LOCAL-00001" summary="adding walk through">
       <created>1591019218151</created>
@@ -151,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591028251429</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding game.py">
+      <created>1591028502960</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591028502960</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +167,17 @@
   </component>
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
@@ -170,7 +189,8 @@
     <MESSAGE value="adding full_board_check" />
     <MESSAGE value="adding player_position()" />
     <MESSAGE value="adding replay()" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding replay()" />
+    <MESSAGE value="adding game.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding game.py" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
