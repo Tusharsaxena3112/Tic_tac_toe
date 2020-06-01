@@ -1,21 +1,31 @@
 import random
+from os import system, name
+
+
+def clear():
+    if name == 'nt':
+        _ = system('cls')
+
+    else:
+        _ = system('clear')
 
 
 def player_marker():
     marker = ' '
-    while (marker != 'X' or marker != 'O'):
+    while marker != 'X' or marker != 'O':
         print("Choose a marker i.e X or O")
         marker = input().upper()
-        if (marker == 'X'):
-            return ('X', 'O')
+        if marker == 'X':
+            return 'X', 'O'
         else:
-            return ('O', 'X')
+            return 'O', 'X'
 
 
 def display_board(board):
+    clear()
     print(board[1] + ' | ' + board[2] + ' | ' + board[3])
     print('-----------')
-    print(board[4] + ' | ' + board[4] + ' | ' + board[6])
+    print(board[4] + ' | ' + board[5] + ' | ' + board[6])
     print('-----------')
     print(board[7] + ' | ' + board[8] + ' | ' + board[9])
 
@@ -62,7 +72,7 @@ def full_board_check(board):
 
 def player_position():
     position = 0
-    while position not in range(1, 10) or not space_check(board, position):
+    while position not in range(1, 10) or not space_check(dis_board, position):
         position = int(input('Enter index position :'))
 
     return position
@@ -86,9 +96,10 @@ def replay():
 
 print('WELCOME TO TIC-TOC-TOE')
 while True:
-    board = [' '] * 10
+    dis_board = [' '] * 10
     player_1, player_2 = player_marker()
     turn = who_play_first()
+    print(turn + ' Will go first')
     ready = input('Ready to play (y or n)')
     if ready == 'y':
         game_on = True
@@ -97,31 +108,31 @@ while True:
 
     while game_on:
         if turn == 'Player 1':
-            display_board(board)  # display the board
-            position = player_position()  # choosing the player position
-            place_marker(board, position, player_1)
-            if win_check(board, player_1):
-                display_board(board)
+            display_board(dis_board)  # display the board
+            dis_position = player_position()  # choosing the player position
+            place_marker(dis_board, dis_position, player_1)
+            if win_check(dis_board, player_1):
+                display_board(dis_board)
                 print('PLAYER 1 has won the game!')
                 game_on = False
             else:
-                if full_board_check(board):
-                    display_board(board)
+                if full_board_check(dis_board):
+                    display_board(dis_board)
                     print('TIED GAME')
                     game_on = False
                 else:
                     turn = 'Player 2'
         else:
-            display_board(board)
-            position = player_position()  # choosing the player position
-            place_marker(board, position, player_2)
-            if win_check(board, player_2):
-                display_board(board)
+            display_board(dis_board)
+            dis_position = player_position()  # choosing the player position
+            place_marker(dis_board, dis_position, player_2)
+            if win_check(dis_board, player_2):
+                display_board(dis_board)
                 print('PLAYER 2 has won the game!')
                 game_on = False
             else:
-                if full_board_check(board):
-                    display_board(board)
+                if full_board_check(dis_board):
+                    display_board(dis_board)
                     print('TIED GAME')
                     game_on = False
                 else:
