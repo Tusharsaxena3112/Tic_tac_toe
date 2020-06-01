@@ -22,7 +22,7 @@ while True:
     while game_on:
         if turn == 'Player 1':
             f.display_board(board)  # display the board
-            position = f.player_posiion()  # choosing the player position
+            position = f.player_position()  # choosing the player position
             f.place_marker(board, position, player_1)
             if f.win_check(board, player_1):
                 f.display_board(board)
@@ -37,7 +37,7 @@ while True:
                     turn = 'Player 2'
         else:
             f.display_board(board)
-            position = f.player_posiion()  # choosing the player position
+            position = f.player_position()  # choosing the player position
             f.place_marker(board, position, player_2)
             if f.win_check(board, player_2):
                 f.display_board(board)

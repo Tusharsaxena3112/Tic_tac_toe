@@ -8,6 +8,8 @@
 
 import random
 
+from game_functions.game import board
+
 
 def player_marker():
     marker = ' '
@@ -68,9 +70,9 @@ def full_board_check(board):
     return True
 
 
-def player_posiion():
+def player_position():
     position = 0
-    while position not in range(1, 10) or not space_check():
+    while position not in range(1, 10) or not space_check(board, position):
         position = int(input('Enter index position :'))
 
     return position
