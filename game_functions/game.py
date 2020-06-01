@@ -21,7 +21,35 @@ while True:
 
     while game_on:
         if turn == 'Player 1':
+            f.display_board(board)  # display the board
+            position = f.player_posiion()  # choosing the player position
+            f.place_marker(board, position, player_1)
+            if f.win_check(board, player_1):
+                f.display_board(board)
+                print('PLAYER 1 has won the game!')
+                game_on = False
+            else:
+                if f.full_board_check(board):
+                    f.display_board(board)
+                    print('TIED GAME')
+                    game_on = False
+                else:
+                    turn = 'Player 2'
+        else:
             f.display_board(board)
+            position = f.player_posiion()  # choosing the player position
+            f.place_marker(board, position, player_2)
+            if f.win_check(board, player_2):
+                f.display_board(board)
+                print('PLAYER 2 has won the game!')
+                game_on = False
+            else:
+                if f.full_board_check(board):
+                    f.display_board(board)
+                    print('TIED GAME')
+                    game_on = False
+                else:
+                    turn = 'Player 1'
 
     if not f.replay():
         break
