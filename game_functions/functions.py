@@ -28,3 +28,21 @@ def display_board(board):
 
 def place_marker(board, position, marker):
     board[position] = marker
+
+
+# check all rows
+# check all the columns
+# check all the diagonals
+
+def win_check(board, marker):
+    if (board[1] == marker and board[2] == marker and board[3] == marker) or (
+            board[4] == marker and board[5] == marker and board[6] == marker) or (
+            board[7] == marker and board[8] == marker and board[9] == marker) or (
+            board[1] == marker and board[4] == marker and board[7] == marker) or (
+            board[2] == marker and board[5] == marker and board[8] == marker) or (
+            board[3] == marker and board[6] == marker and board[9] == marker) or (
+            board[1] == marker and board[5] == marker and board[9] == marker) or (
+            board[3] == marker and board[5] == marker and board[7] == marker):
+        return True
+    else:
+        return False
