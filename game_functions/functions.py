@@ -7,3 +7,10 @@
 # Ask if players want to play again.
 
 
+def player_marker():
+    print("Choose a marker i.e X or O")
+    marker = input()
+    if (marker == 'X'):
+        return ('X', 'O')
+    else:
+        return ('O', 'X')
