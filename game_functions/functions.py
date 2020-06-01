@@ -55,3 +55,14 @@ def who_play_first():
     if (r == 0):
         return 'Player 1'
     return 'Player 2'
+
+
+def space_check(board, position):
+    return board[position] == ' '
+
+
+def full_board_check(board):
+    for i in range(1, 10):
+        if board[i] == '':
+            return False
+    return True

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="622f44f7-3d11-4399-adfc-db4e8e9691d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_functions/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_functions/functions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591019017601</updated>
-      <workItem from="1591019018791" duration="2518000" />
+      <workItem from="1591019018791" duration="2915000" />
     </task>
     <task id="LOCAL-00001" summary="adding walk through">
       <created>1591019218151</created>
@@ -101,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591020664941</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding win_check">
+      <created>1591021594276</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591021594276</updated>
+    </task>
+    <task id="LOCAL-00005" summary="adding who_play_first">
+      <created>1591021732724</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591021732724</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +128,9 @@
     <MESSAGE value="adding walk through" />
     <MESSAGE value="defing player_marker" />
     <MESSAGE value="adding place_marker" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding place_marker" />
+    <MESSAGE value="adding win_check" />
+    <MESSAGE value="adding who_play_first" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding who_play_first" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
