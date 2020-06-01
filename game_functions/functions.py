@@ -8,9 +8,23 @@
 
 
 def player_marker():
-    print("Choose a marker i.e X or O")
-    marker = input()
-    if (marker == 'X'):
-        return ('X', 'O')
-    else:
-        return ('O', 'X')
+    marker = ' '
+    while (marker != 'X' or marker != 'O'):
+        print("Choose a marker i.e X or O")
+        marker = input().upper()
+        if (marker == 'X'):
+            return ('X', 'O')
+        else:
+            return ('O', 'X')
+
+
+def display_board(board):
+    print(board[1] + ' | ' + board[2] + ' | ' + board[3])
+    print('-----------')
+    print(board[4] + ' | ' + board[4] + ' | ' + board[6])
+    print('-----------')
+    print(board[7] + ' | ' + board[8] + ' | ' + board[9])
+
+
+def place_marker(board, position, marker):
+    board[position] = marker
